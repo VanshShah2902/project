@@ -1,0 +1,141 @@
+1)ifconfig 
+2)ping192.168.3.25
+3)nslookup www.google.com
+4)netstat
+5)sudo apt install whois
+whois www.google.com
+
+6) route -n
+7) DiG 9.16.1-Ubuntu
+8) date
+9) sudo snap install nmap  # version 7.95
+10) sudo snap install nmap
+    nmap
+11) traceroute www.google.com
+12) nmap 192.168.3.43
+
+
+
+
+
+//
+Here’s a quick guide to using these basic networking commands in Linux, along with brief explanations for each command’s purpose and syntax.
+
+1. Ping
+Used to test the connectivity between your system and a remote host, ping sends a series of ICMP Echo Request packets to the target.
+
+Syntax:
+
+bash
+Copy code
+ping <hostname or IP>
+Example:
+
+bash
+Copy code
+ping google.com
+This command sends continuous pings to google.com. Use Ctrl + C to stop it.
+
+2. Traceroute (tracert)
+Used to trace the route that packets take to reach a destination host, showing each hop and the response time.
+
+Syntax:
+
+bash
+Copy code
+traceroute <hostname or IP>
+Example:
+
+bash
+Copy code
+traceroute google.com
+This command shows the path packets take from your computer to google.com. Note: You may need to install traceroute on some systems with sudo apt-get install traceroute.
+
+3. Nslookup
+Used to find the IP address associated with a domain name and vice versa.
+
+Syntax:
+
+bash
+Copy code
+nslookup <hostname or IP>
+Example:
+
+bash
+Copy code
+nslookup google.com
+This command queries DNS servers to resolve google.com to its IP address.
+
+4. Netstat
+Displays network connections, routing tables, interface statistics, and other network-related information.
+
+Syntax:
+
+bash
+Copy code
+netstat <options>
+Examples:
+
+netstat -a: Shows all connections.
+netstat -tuln: Shows listening ports (TCP and UDP).
+netstat -r: Displays the routing table.
+5. ARP (Address Resolution Protocol)
+Used to display or manipulate the ARP cache, which stores IP-to-MAC address mappings.
+
+Syntax:
+
+bash
+Copy code
+arp <options>
+Examples:
+
+arp -a: Lists all entries in the ARP table.
+arp -d <IP>: Deletes an ARP entry.
+6. RARP (Reverse Address Resolution Protocol)
+RARP is used by a host to request its IP address based on its MAC address. It's mostly replaced by DHCP in modern networks.
+
+In Linux, RARP is generally not a standalone command but may be accessed through networking utilities if your system supports it.
+
+7. ip
+A modern alternative to ifconfig, the ip command is used for configuring network interfaces, routes, and more.
+
+Syntax:
+
+bash
+Copy code
+ip <object> <command>
+Examples:
+
+ip a: Shows IP addresses on all interfaces.
+ip link: Shows network interfaces.
+ip route: Shows the routing table.
+8. Ifconfig
+Used to view or configure network interface settings. It is being replaced by ip but is still available on many systems.
+
+Syntax:
+
+bash
+Copy code
+ifconfig <interface> <options>
+Examples:
+
+ifconfig: Lists all active interfaces.
+ifconfig eth0 up: Activates the eth0 interface.
+ifconfig eth0 down: Deactivates the eth0 interface.
+9. dig
+dig (Domain Information Groper) is a DNS lookup tool that retrieves DNS records for a domain.
+
+Syntax:
+
+bash
+Copy code
+dig <hostname>
+Example:
+
+bash
+Copy code
+dig google.com
+This command fetches DNS information about google.com.
+
+10. Route
+Shows and manipulates the IP routing table.//

@@ -1,0 +1,10 @@
+sudo apt update
+sudo apt install vsftpd
+sudo systemctl start vsftpd
+sudo nano /etc/vsftpd.conf
+sudo systemctl restart vsftpd
+sudo ufw allow ftp
+sudo useradd -m testuser
+sudo passwd testuser
+sudo ftp comp-HP
+ftp

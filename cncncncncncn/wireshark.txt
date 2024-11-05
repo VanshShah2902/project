@@ -1,0 +1,15 @@
+INSATALLATION OF WIRE SHARK USING TERMINAL -->
+    1. sudo add-apt-repository ppa:wireshark-dev/stable
+    2. sudo apt-get update
+    3. sudo apt-get install wireshark
+    4. sudo wireshark
+
+Commands to run wireshark
+1) tcp
+2) udp
+3) tcp.port==443 or 80
+4) udp.port== 443 or 80
+5) Ip.addr == 192.168.3.39
+6) dns 
+7) arp
+8) Promiscuous mode 

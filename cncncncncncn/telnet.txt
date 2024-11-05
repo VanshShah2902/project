@@ -1,0 +1,10 @@
+COMMANDS TO RUN TELNET
+sudo apt install telnetd -y
+sudo systemctl status inetd
+telnet www.google.com
+sudo ufwstatus
+sudo ufw enable
+sudo ufw allow23
+sudo systemcte status inetd
+telnet 192.168.1.10
+telnet localhost
